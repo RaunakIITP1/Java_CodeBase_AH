@@ -1,8 +1,8 @@
-package Array;
+package Day1;
 
 import java.util.Scanner;
 
-public class maxElement {
+public class oddElement {
     static void main() {
 
         Scanner sc =new Scanner(System.in);
@@ -10,15 +10,12 @@ public class maxElement {
 
         int [] arr = new int[n];
 
-        int max= arr[0];
-
         for(int i =0; i<n; i++){
             arr[i]= sc.nextInt();
-            if(arr[i]>max){
-                max= arr[i];
+            if(i%2 !=0){
+                System.out.println(arr[i]);
             }
         }
-        System.out.println(max);
 
     }
 }

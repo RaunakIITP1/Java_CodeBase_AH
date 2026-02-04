@@ -1,6 +1,4 @@
-package Array;
-
-import java.util.Scanner;
+package Day1;
 
 public class arrayBasics {
     static void main(String[] args) {
