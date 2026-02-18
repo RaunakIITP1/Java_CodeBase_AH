@@ -1,21 +1,19 @@
 package LinkedList;
 
-public class InsertionLL {
-
-    static class Node{
+public class DeletionLL {
+    static class Node {
         int data;
         Node next;
 
-        Node(int data){
-            this.data= data;
-            this.next =  null;
+        Node(int data) {
+            this.data = data;
+            this.next = null;
         }
     }
 
     static void main(String[] args) {
-        Node head= null;
 
-//        insert at start
+        Node  head = null;
 
         Node n1= new Node(5);
         n1.next= head;
@@ -25,15 +23,19 @@ public class InsertionLL {
         n2.next= head;
         head= n2;
 
-
-//        insert at end
         Node n3= new Node(30);
+
+//        delete from start
+        head.next= n3;
+
+
+//        Delete from end
+
         Node temp = head;
-        while(temp.next!=null){
+        while (temp.next.next!=null){
             temp= temp.next;
         }
-        temp.next= n3;
-
+        temp.next= null;
 
 
         temp = head;
@@ -42,7 +44,6 @@ public class InsertionLL {
             temp = temp.next;
         }
         System.out.println("Null");
-
 
 
 
